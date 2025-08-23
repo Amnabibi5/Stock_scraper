@@ -30,7 +30,7 @@ jobs:
     - name: Commit dated output file
       run: |
         git config --global user.name "Amna Bibi"
-        git config --global user.email "amna@example.com"
+        git config --global user.email "amnab9373@gmail.com"
         git add output_*.csv
         git commit -m "📦 Scrape results for $(date -u)"
         git push
