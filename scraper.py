@@ -73,7 +73,7 @@ def get_urls():
             print("⚠ No valid URLs found in urls.txt")
             
     except FileNotFoundError:
-        print("❌ urls.txt file not found! Please create it with your client URLs.")
+        print("❌ urls.txt file not found! Using fallback URLs.")
     except Exception as e:
         print(f"❌ Error reading urls.txt: {e}")
     
