@@ -1,0 +1,44 @@
+# CLIENT URLS FOR STOCK SCRAPER
+# Lines starting with # are comments and will be ignored
+# Add one URL per line
+# Make sure URLs start with http:// or https://
+
+# =================
+# STOCK EXCHANGES
+# =================
+https://finance.yahoo.com/quote/AAPL
+https://finance.yahoo.com/quote/GOOGL
+https://finance.yahoo.com/quote/MSFT
+https://finance.yahoo.com/quote/TSLA
+
+# Pakistan Stock Exchange
+https://www.psx.com.pk/
+https://www.khadim.com/investor-relations
+
+# =================
+# CLIENT WEBSITES
+# =================
+# Add your client URLs below:
+
+# Client 1 - Example Corp
+# https://client1-website.com/investor-relations
+# https://client1-website.com/financial-data
+
+# Client 2 - Another Company
+# https://client2-website.com/stocks
+# https://client2-website.com/reports
+
+# =================
+# TEST URLS (for testing)
+# =================
+https://httpbin.org/status/200
+https://httpbin.org/json
+
+# =================
+# INSTRUCTIONS:
+# =================
+# 1. Remove the # symbol to activate a URL
+# 2. Add new URLs on new lines
+# 3. Save this file and push to GitHub
+# 4. The scraper will automatically use these URLs
+# =================
