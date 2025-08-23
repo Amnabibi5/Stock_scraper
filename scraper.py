@@ -32,16 +32,14 @@ def generate_urls():
 # 🚀 Main workflow
 def main():
     generate_urls()
-
     with open("urls.txt") as f:
         urls = [line.strip() for line in f if line.strip()]
-
+    
     results = []
     for url in urls:
         results.append(scrape(url))
-
+    
     df = pd.DataFrame(results)
-
     today = datetime.utcnow().strftime("%Y-%m-%d")
     output_filename = f"output_{today}.csv"
     df.to_csv(output_filename, index=False)
@@ -50,4 +48,3 @@ def main():
 # 🏁 Entry point
 if __name__ == "__main__":
     main()
-
