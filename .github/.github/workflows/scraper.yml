@@ -2,8 +2,8 @@ name: Weekly Stock Scraper
 
 on:
   schedule:
-    - cron: '0 5 * * 6'  # Runs every Saturday at 5 AM UTC (10 AM PKT)
-  workflow_dispatch:      # Allows manual runs too
+    - cron: '0 5 * * 6'  # Every Saturday at 5 AM UTC (10 AM PKT)
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -21,14 +21,17 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    - name: Run scraper
-      run: python scraper.py
+    - name: Run scraper and rename output
+      run: |
+        python scraper.py
+        DATE=$(date -u +"%Y-%m-%d")
+        mv output.csv "output_$DATE.csv"
 
-    - name: Commit updated output.csv
+    - name: Commit dated output file
       run: |
         git config --global user.name "Amna Bibi"
         git config --global user.email "amna@example.com"
-        git add output.csv
-        git commit -m "📦 Weekly scrape results: $(date -u)"
+        git add output_*.csv
+        git commit -m "📦 Scrape results for $(date -u)"
         git push
 
