@@ -19,15 +19,13 @@ def scrape(url):
             "error": str(e)
         }
 
-# 📝 Generate urls.txt with properly formatted URLs
+# 📝 Generate urls.txt safely
 def generate_urls():
     urls = [
-    "https://www.newegg.com/hp-prodesk-400-g5-nettop-computer/p/N82E16883997492",
-    "https://www.newegg.com/p/N82E16834360261",
-    "https://www.newegg.com/p/N82E16834233251",
-    "https://www.newegg.com/p/N82E16834360335",
-    "https://www.newegg.com/p/N82E16834233252"
-]
+        "https://example.com",
+        "https://httpbin.org/status/200",
+        "https://httpbin.org/status/404"
+    ]
     with open("urls.txt", "w") as f:
         f.write("\n".join(urls))
 
