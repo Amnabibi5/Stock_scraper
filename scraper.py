@@ -33,35 +33,29 @@ def get_urls():
 
 def main():
     """Main scraping workflow"""
-    print("🚀 Starting web scraper...")
+    print("Starting web scraper...")
     
-    # Get URLs to scrape
     urls = get_urls()
-    print(f"📋 Found {len(urls)} URLs to scrape")
+    print(f"Found {len(urls)} URLs to scrape")
     
-    # Scrape each URL
     results = []
     for i, url in enumerate(urls, 1):
-        print(f"🔍 Scraping {i}/{len(urls)}: {url}")
+        print(f"Scraping {i}/{len(urls)}: {url}")
         result = scrape(url)
         results.append(result)
     
-    # Create DataFrame and save results
     df = pd.DataFrame(results)
     
-    # Use GitHub workspace directory if available, otherwise current directory
     workspace = os.getenv('GITHUB_WORKSPACE', '.')
-    today = datetime.utcnow().strftime("%Y-%m-%d_%H-%M-%S")
-    output_filename = os.path.join(workspace, f"scrape_results_{today}.csv")
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    output_filename = os.path.join(workspace, f"output_{today}.csv")
     
-    # Save to CSV
     df.to_csv(output_filename, index=False)
-    print(f"✅ Results saved to {output_filename}")
+    print(f"Results saved to {output_filename}")
     
-    # Print summary
     successful_scrapes = len(df[df['status'] != 'error'])
     failed_scrapes = len(df[df['status'] == 'error'])
-    print(f"📊 Summary: {successful_scrapes} successful, {failed_scrapes} failed")
+    print(f"Summary: {successful_scrapes} successful, {failed_scrapes} failed")
     
     return df
 
