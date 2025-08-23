@@ -2,12 +2,11 @@ import requests
 import pandas as pd
 from datetime import datetime
 
-# 🔧 Replace this with your actual scraping logic
+# 🔧 Scraping logic
 def scrape(url):
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
-        # Example: return page title or status code
         return {
             "url": url,
             "status": response.status_code,
@@ -20,31 +19,29 @@ def scrape(url):
             "error": str(e)
         }
 
-# 📝 Generate urls.txt dynamically
+# 📝 Generate urls.txt with properly formatted URLs
 def generate_urls():
     urls = [
-        "https://example.com/page1",
-        "https://example.com/page2",
-        "https://example.com/page3"
+        "https://www.newegg.com/hp-prodesk-400-g5-nettop-computer/p/N82E16883997492",
+        "https://www.newegg.com/p/N82E16883997493",
+        "https://www.newegg.com/p/N82E16883997494"
     ]
     with open("urls.txt", "w") as f:
         f.write("\n".join(urls))
 
 # 🚀 Main workflow
 def main():
-    generate_urls()  # ✅ Create urls.txt
+    generate_urls()
 
     with open("urls.txt") as f:
         urls = [line.strip() for line in f if line.strip()]
 
     results = []
     for url in urls:
-        result = scrape(url)
-        results.append(result)
+        results.append(scrape(url))
 
     df = pd.DataFrame(results)
 
-    # Save to dated CSV
     today = datetime.utcnow().strftime("%Y-%m-%d")
     output_filename = f"output_{today}.csv"
     df.to_csv(output_filename, index=False)
