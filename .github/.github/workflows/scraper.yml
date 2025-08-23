@@ -1,26 +1,34 @@
-name: Run Scraper
+name: Weekly Stock Scraper
 
 on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * 6'  # Runs every Saturday at 5 AM UTC (10 AM PKT)
+  workflow_dispatch:      # Allows manual runs too
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+    - name: Checkout repo
+      uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+    - name: Install dependencies
+      run: pip install -r requirements.txt
 
-      - name: Run scraper
-        run: |
-          python scraper.py
+    - name: Run scraper
+      run: python scraper.py
+
+    - name: Commit updated output.csv
+      run: |
+        git config --global user.name "Amna Bibi"
+        git config --global user.email "amna@example.com"
+        git add output.csv
+        git commit -m "📦 Weekly scrape results: $(date -u)"
+        git push
+
