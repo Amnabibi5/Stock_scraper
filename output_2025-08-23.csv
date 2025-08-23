@@ -1,0 +1,5 @@
+url,status,content_length,timestamp,error
+https://example.com,200,1256.0,2025-08-23T10:03:00.808631,
+https://httpbin.org/status/200,200,0.0,2025-08-23T10:03:02.234100,
+https://httpbin.org/status/404,error,,2025-08-23T10:03:02.313417,404 Client Error: NOT FOUND for url: https://httpbin.org/status/404
+https://httpbin.org/json,200,429.0,2025-08-23T10:03:02.393304,
