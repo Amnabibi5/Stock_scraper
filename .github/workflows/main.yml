@@ -5,32 +5,37 @@ on:
     - cron: '0 5 * * 6'  # Every Saturday at 5 AM UTC (10 AM PKT)
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
-
+      uses: actions/checkout@v4
+      
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
-
+        
     - name: Install dependencies
       run: pip install -r requirements.txt
-
+      
     - name: Run scraper and rename output
       run: |
         python scraper.py
-        DATE=$(date -u +"%Y-%m-%d")
-        mv output.csv "output_$DATE.csv"
-
+        # The scraper now creates timestamped files, so we don't need to rename
+        
     - name: Commit dated output file
       run: |
-        git config --global user.name "Amna Bibi"
-        git config --global user.email "amnab9373@gmail.com"
-        git add output_*.csv
-        git commit -m "📦 Scrape results for $(date -u)"
-        git push
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add *.csv
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "📦 Scrape results for $(date -u +"%Y-%m-%d %H:%M:%S") UTC"
+          git push
+        fi
