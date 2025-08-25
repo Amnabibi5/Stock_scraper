@@ -1,4 +1,4 @@
-# 🤖 Automated Web Scraping & Monitoring System
+# 🤖 Automated Web Monitoring System
 
 > **Professional web scraping solution that monitors your websites automatically and generates detailed reports every week.**
 
