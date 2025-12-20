@@ -1,0 +1,9 @@
+url,status,content_length,response_time,contains_stock_data,title,timestamp,error
+https://finance.yahoo.com/quote/AAPL,200,2653087.0,0.23945,True,"Apple Inc. (AAPL) Stock Price, News, Quote &amp; History - Yahoo Finance",2025-12-20T05:16:32.048786,
+https://finance.yahoo.com/quote/GOOGL,200,2605517.0,0.246153,True,"Alphabet Inc. (GOOGL) Stock Price, News, Quote &amp; History - Yahoo Finance",2025-12-20T05:16:32.572150,
+https://finance.yahoo.com/quote/MSFT,200,2630841.0,0.366396,True,"Microsoft Corporation (MSFT) Stock Price, News, Quote &amp; History - Yahoo Finance",2025-12-20T05:16:33.212481,
+https://finance.yahoo.com/quote/TSLA,200,2679532.0,0.362745,True,"Tesla, Inc. (TSLA) Stock Price, News, Quote &amp; History - Yahoo Finance",2025-12-20T05:16:33.871099,
+https://www.psx.com.pk/,200,236698.0,0.934341,True,Pakistan Stock Exchange Limited -,2025-12-20T05:16:35.251497,
+https://www.khadim.com/investor-relations,error,,0.0,False,,2025-12-20T05:16:35.866602,403 Client Error: Forbidden for url: https://www.domaineasy.com/buy-domain/www.khadim.com
+https://httpbin.org/status/200,200,0.0,0.39955,False,,2025-12-20T05:16:36.268616,
+https://httpbin.org/json,200,429.0,0.432842,False,,2025-12-20T05:16:36.703266,
