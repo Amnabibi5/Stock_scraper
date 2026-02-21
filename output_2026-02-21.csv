@@ -1,0 +1,9 @@
+url,status,content_length,response_time,contains_stock_data,title,timestamp
+https://finance.yahoo.com/quote/AAPL,200,2755236,0.337264,True,"Apple Inc. (AAPL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-02-21T05:38:45.255717
+https://finance.yahoo.com/quote/GOOGL,200,2746938,0.251795,True,"Alphabet Inc. (GOOGL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-02-21T05:38:45.795008
+https://finance.yahoo.com/quote/MSFT,200,2703235,0.258852,True,"Microsoft Corporation (MSFT) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-02-21T05:38:46.317635
+https://finance.yahoo.com/quote/TSLA,200,2739774,0.31239,True,"Tesla, Inc. (TSLA) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-02-21T05:38:46.897021
+https://www.psx.com.pk/,200,227356,0.916074,True,Pakistan Stock Exchange Limited -,2026-02-21T05:38:48.412558
+https://www.khadim.com/investor-relations,200,114,0.28828,False,,2026-02-21T05:38:48.702429
+https://httpbin.org/status/200,200,0,0.673552,False,,2026-02-21T05:38:49.377326
+https://httpbin.org/json,200,429,0.280245,False,,2026-02-21T05:38:49.659079
