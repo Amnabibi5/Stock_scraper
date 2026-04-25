@@ -1,0 +1,9 @@
+url,status,content_length,response_time,contains_stock_data,title,timestamp,error
+https://finance.yahoo.com/quote/AAPL,200,2748354.0,0.282027,True,"Apple Inc. (AAPL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-04-25T06:19:00.041772,
+https://finance.yahoo.com/quote/GOOGL,200,2662310.0,0.242526,True,"Alphabet Inc. (GOOGL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-04-25T06:19:00.653065,
+https://finance.yahoo.com/quote/MSFT,200,2723973.0,0.255578,True,"Microsoft Corporation (MSFT) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-04-25T06:19:01.246503,
+https://finance.yahoo.com/quote/TSLA,200,2760527.0,0.243286,True,"Tesla, Inc. (TSLA) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-04-25T06:19:01.785107,
+https://www.psx.com.pk/,200,233828.0,2.377731,True,Pakistan Stock Exchange Limited -,2026-04-25T06:19:05.357978,
+https://www.khadim.com/investor-relations,error,,0.0,False,,2026-04-25T06:19:05.569459,"('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+https://httpbin.org/status/200,200,0.0,0.252774,False,,2026-04-25T06:19:05.822953,
+https://httpbin.org/json,200,429.0,0.166871,False,,2026-04-25T06:19:05.991464,
