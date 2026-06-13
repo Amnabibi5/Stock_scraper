@@ -1,0 +1,9 @@
+url,status,content_length,response_time,contains_stock_data,title,timestamp,error
+https://finance.yahoo.com/quote/AAPL,200,1466089.0,0.186873,True,"Apple Inc. (AAPL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-06-13T08:18:13.686101,
+https://finance.yahoo.com/quote/GOOGL,200,1312897.0,0.161289,True,"Alphabet Inc. (GOOGL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-06-13T08:18:13.963393,
+https://finance.yahoo.com/quote/MSFT,200,1396736.0,0.241957,True,"Microsoft Corporation (MSFT) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-06-13T08:18:14.347327,
+https://finance.yahoo.com/quote/TSLA,200,1460763.0,0.147928,True,"Tesla, Inc. (TSLA) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-06-13T08:18:14.598224,
+https://www.psx.com.pk/,200,229526.0,1.577824,True,Pakistan Stock Exchange Limited -,2026-06-13T08:18:17.131949,
+https://www.khadim.com/investor-relations,200,114.0,0.167881,False,,2026-06-13T08:18:17.301660,
+https://httpbin.org/status/200,200,0.0,0.497196,False,,2026-06-13T08:18:17.800312,
+https://httpbin.org/json,error,,0.0,False,,2026-06-13T08:18:32.852032,"HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=15)"
