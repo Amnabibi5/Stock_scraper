@@ -1,0 +1,9 @@
+url,status,content_length,response_time,contains_stock_data,title,timestamp,error
+https://finance.yahoo.com/quote/AAPL,200,1472767.0,0.218349,True,"Apple Inc. (AAPL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-08-08T05:38:19.842254,
+https://finance.yahoo.com/quote/GOOGL,200,1403999.0,0.200685,True,"Alphabet Inc. (GOOGL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-08-08T05:38:20.249437,
+https://finance.yahoo.com/quote/MSFT,200,1476361.0,0.184762,True,"Microsoft Corporation (MSFT) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-08-08T05:38:20.687398,
+https://finance.yahoo.com/quote/TSLA,200,1435993.0,0.204772,True,"Tesla, Inc. (TSLA) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-08-08T05:38:21.139170,
+https://www.psx.com.pk/,200,236643.0,2.254076,True,Pakistan Stock Exchange Limited -,2026-08-08T05:38:24.525456,
+https://www.khadim.com/investor-relations,200,114.0,0.216034,False,,2026-08-08T05:38:24.743196,
+https://httpbin.org/status/200,error,,0.0,False,,2026-08-08T05:38:24.992946,503 Server Error: Service Temporarily Unavailable for url: https://httpbin.org/status/200
+https://httpbin.org/json,error,,0.0,False,,2026-08-08T05:38:25.228856,503 Server Error: Service Temporarily Unavailable for url: https://httpbin.org/json
