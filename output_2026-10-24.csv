@@ -1,0 +1,9 @@
+url,status,content_length,response_time,contains_stock_data,title,timestamp,error
+https://finance.yahoo.com/quote/AAPL,200,1031250.0,0.206885,True,"Apple Inc. (AAPL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-10-24T09:15:31.315316,
+https://finance.yahoo.com/quote/GOOGL,200,1031518.0,0.180827,True,"Alphabet Inc. (GOOGL) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-10-24T09:15:31.571068,
+https://finance.yahoo.com/quote/MSFT,200,1024410.0,0.152583,True,"Microsoft Corporation (MSFT) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-10-24T09:15:31.900346,
+https://finance.yahoo.com/quote/TSLA,200,1033358.0,0.1562,True,"Tesla, Inc. (TSLA) Stock Price, News, Quote &amp; History - Yahoo Finance",2026-10-24T09:15:32.151357,
+https://www.psx.com.pk/,error,,0.0,False,,2026-10-24T09:15:33.332786,502 Server Error: Bad Gateway for url: https://www.psx.com.pk/
+https://www.khadim.com/investor-relations,200,114.0,0.080781,False,,2026-10-24T09:15:33.415282,
+https://httpbin.org/status/200,200,0.0,0.099996,False,,2026-10-24T09:15:33.516834,
+https://httpbin.org/json,200,429.0,0.036459,False,,2026-10-24T09:15:33.554972,
